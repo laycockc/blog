@@ -1,0 +1,65 @@
+baseURL: "https://chrislaycock.dev/"
+languageCode: en-us
+title: Chris Laycock
+theme: PaperMod
+paginate: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  description: "AWS, IaC, DevOps, and the occasional rant."
+  author: Chris Laycock
+  defaultTheme: auto  # switches light/dark based on browser preference
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+
+  homeInfoParams:
+    Title: "Hey 👋"
+    Content: >-
+      I build developer tools and write about infrastructure,
+      secrets management, and cloud engineering.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/claycock96"
+    - name: rss
+      url: "/index.xml"
+
+  # SEO
+  keywords:
+    - devops
+    - envkey
+    - terraform
+    - ansible
+    - aws
+    - govlcoud
+    - cloud infrastructure
+    - developer tools
+    - rust
+
+menu:
+  main:
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
