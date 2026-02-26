@@ -14,8 +14,9 @@ params:
   author: Chris Laycock
   info:
     - "☁️ AWS nerd"
-    - "🛠️ Terraform-heavy"
+    - "🤫 IAM/SCP policy whisperer"
     - "🦅 US GovCloud workloads"
+    - "🛠️ Terraform-heavy"
     - "✨ Vibe coding"
   description: "AWS, IaC, DevOps, and federal-compliant cloud architecture."
   keywords: "aws,terraform,devops,fedramp,govcloud,cloud infrastructure"
