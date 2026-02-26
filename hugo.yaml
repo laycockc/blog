@@ -1,65 +1,61 @@
 baseURL: "https://chrislaycock.dev/"
 languageCode: en-us
 title: Chris Laycock
-theme: PaperMod
-paginate: 10
+theme: coder
+
+pagination:
+  pagerSize: 10
 
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 
-minify:
-  disableXML: true
-  minifyOutput: true
-
 params:
-  env: production
-  description: "AWS, IaC, DevOps, and the occasional rant."
   author: Chris Laycock
-  defaultTheme: auto  # switches light/dark based on browser preference
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowToc: true
-  TocOpen: false
-
-  homeInfoParams:
-    Title: "Hey 👋"
-    Content: >-
-      I build developer tools and write about infrastructure,
-      secrets management, and cloud engineering.
-
-  socialIcons:
-    - name: github
+  info:
+    - "☁️ AWS nerd"
+    - "🛠️ Terraform-heavy"
+    - "🦅 US GovCloud workloads"
+    - "✨ Vibe coding"
+  description: "AWS, IaC, DevOps, and federal-compliant cloud architecture."
+  keywords: "aws,terraform,devops,fedramp,govcloud,cloud infrastructure"
+  avatarURL: "images/avatar.jpeg"
+  customCSS:
+    - "css/custom.css"
+  colorScheme: auto
+  hideColorSchemeToggle: false
+  dateFormat: "January 2, 2006"
+  social:
+    - name: GitHub
+      icon: "fa-brands fa-github fa-2x"
+      weight: 1
       url: "https://github.com/laycockc"
-    - name: rss
+    - name: RSS
+      icon: "fa-solid fa-rss fa-2x"
+      weight: 2
       url: "/index.xml"
-
-  # SEO
-  keywords:
-    - devops
-    - envkey
-    - terraform
-    - ansible
-    - aws
-    - govlcoud
-    - cloud infrastructure
-    - developer tools
-    - rust
+      rel: alternate
+      type: application/rss+xml
 
 menu:
   main:
     - identifier: posts
       name: Blog
-      url: /posts/
+      url: posts/
       weight: 10
     - identifier: projects
       name: Projects
-      url: /projects/
+      url: projects/
       weight: 20
     - identifier: about
       name: About
-      url: /about/
+      url: about/
       weight: 30
+    - identifier: contact
+      name: Contact me
+      url: contact/
+      weight: 40
+    - identifier: flag
+      name: "🇺🇸"
+      url: /
+      weight: 50
