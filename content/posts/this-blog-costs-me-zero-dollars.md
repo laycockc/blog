@@ -63,4 +63,4 @@ If you've been putting off starting a blog because you think you need to set up 
 
 It costs nothing, it scales to whatever traffic you'll realistically get, and you own every piece of it. The hardest part is actually sitting down and writing, and I can't automate that for you.
 
-Well, I *could*. But just an LLM. 
+Well, I *could*. But just use an LLM. 
