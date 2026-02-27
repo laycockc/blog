@@ -13,7 +13,7 @@ buildFuture: false
 params:
   author: Chris Laycock
   info:
-    - "☁️ AWS nerd"
+    - "☁️ AWS native"
     - "🤫 IAM/SCP policy whisperer"
     - "🦅 US GovCloud workloads"
     - "🛠️ Terraform-heavy"
