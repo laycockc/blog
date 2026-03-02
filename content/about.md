@@ -12,4 +12,4 @@ AWS is home. Mostly, the US GovCloud side of it, where everything takes twice as
 
 I also plan to blog about this stuff here.
 
-If you're into cloud infrastructure, GovCloud pain, or arguing about best Terraform repo structure, you're in the right place.
+If you're into cloud infrastructure, GovCloud pain, or arguing about best Terraform repo structure, you're in the right place. :)
