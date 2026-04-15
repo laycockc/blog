@@ -4,77 +4,237 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chris Laycock</title>
-  <meta name="description" content="Chris Laycock. Cloud infrastructure, security, and AI.">
+  <meta name="description" content="Secure cloud infrastructure for regulated environments and AI. Compliant infrastructure across GovCloud partitions and AI workloads.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <noscript>
+    <style>
+      .tabpanel[hidden] { display: block !important; }
+      .tabs { display: none; }
+    </style>
+  </noscript>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <div class="glow glow-1" aria-hidden="true"></div>
-  <div class="glow glow-2" aria-hidden="true"></div>
+  <nav class="topbar" aria-label="Site">
+    <a href="/" class="logo"><span class="cube" aria-hidden="true"></span> clc</a>
+    <button type="button" class="search-bar" id="search-jump" aria-label="Jump to main content">
+      <span class="search-icon" aria-hidden="true"></span>
+      <span>Search services, features, docs…</span>
+    </button>
+    <div class="nav-icons" role="group" aria-label="Quick links">
+      <a href="mailto:me@chrislaycock.dev" class="nav-icon" aria-label="Email">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm2-1a1 1 0 00-1 1v.217l7 4.2 7-4.2V4a1 1 0 00-1-1H2zm13 2.383-4.708 2.825L15 11.105v-.383a1 1 0 00-1-1H2a1 1 0 00-1 1v.383l-.698-1.702L1 5.383V14a1 1 0 001 1h12a1 1 0 001-1V5.383z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/christopher-laycock/" class="nav-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.705-.52-1.248-1.342-1.248-.843 0-1.358.543-1.358 1.248 0 .694.521 1.248 1.327 1.248h.015zM12.688 14.4h-3.188V9.6c0-.75-.014-1.716-1.043-1.716-1.043 0-1.203.813-1.203 1.65v4.866H5.1V6.169h2.98v1.3h.042c.416-.788 1.43-1.62 2.96-1.62 3.17 0 3.75 2.085 3.75 4.79V14.4h-3.184z"/></svg>
+      </a>
+    </div>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <span class="region-sel" title="Home region">US South (TN) <span aria-hidden="true">▾</span></span>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <span class="user-sel" title="Console user">chrislaycock <span aria-hidden="true">▾</span></span>
+  </nav>
 
-  <div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="#">Services</a> <span aria-hidden="true">&nbsp;›&nbsp;</span> <a href="#">People</a> <span aria-hidden="true">&nbsp;›&nbsp;</span> <span class="breadcrumb-current">Chris Laycock</span>
+  </nav>
 
-    <section class="hero">
-      <p class="hero-hey">Hey, I'm</p>
-      <h1 class="hero-name">Chris Laycock</h1>
-      <p class="hero-role">Building secure cloud infrastructure for regulated environments and the frontier of AI.</p>
-      <div class="hero-links">
-        <a href="mailto:me@chrislaycock.dev" class="btn-primary">Say hello</a>
-        <a href="https://www.linkedin.com/in/christopher-laycock/" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
+  <header class="service-header">
+    <div class="sh-top">
+      <div>
+        <div class="sh-title-row">
+          <div class="sh-icon" aria-hidden="true">CL</div>
+          <h1 class="sh-name">
+            Chris Laycock
+            <button type="button" class="sh-fav" id="fav" aria-label="Add to favorites" aria-pressed="false">☆</button>
+          </h1>
+        </div>
+        <p class="sh-sub">Secure cloud infrastructure for regulated environments and the frontier of AI. I specialize in compliant infrastructure across GovCloud partitions with a focus on AI workloads.</p>
       </div>
-    </section>
-
-    <section class="section reveal">
-      <p class="section-label">What I work on</p>
-      <div class="focus-list">
-        <div class="focus-item">
-          <h3 class="focus-title">AWS GovCloud</h3>
-          <p class="focus-desc">Compliant workloads in isolated AWS partitions for federal and regulated environments.</p>
-        </div>
-        <div class="focus-item">
-          <h3 class="focus-title">IAM &amp; SCP</h3>
-          <p class="focus-desc">Least-privilege identity policies and service control boundaries across multi-account orgs.</p>
-        </div>
-        <div class="focus-item">
-          <h3 class="focus-title">Terraform</h3>
-          <p class="focus-desc">Infrastructure as code at scale. Modules, state management, and CI/CD pipelines.</p>
-        </div>
-        <div class="focus-item">
-          <h3 class="focus-title">Agentic AI</h3>
-          <p class="focus-desc">Autonomous AI workflows. Tool-using agents, orchestration, and human-in-the-loop systems.</p>
-        </div>
+      <div class="sh-actions">
+        <a href="https://www.linkedin.com/in/christopher-laycock/" class="btn-con" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:me@chrislaycock.dev" class="btn-con btn-primary">Say hello</a>
       </div>
-    </section>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Profile sections">
+      <button type="button" class="tab active" role="tab" id="tab-overview" aria-selected="true" aria-controls="panel-overview" tabindex="0">Overview</button>
+      <button type="button" class="tab" role="tab" id="tab-experience" aria-selected="false" aria-controls="panel-experience" tabindex="-1">Experience</button>
+      <button type="button" class="tab" role="tab" id="tab-projects" aria-selected="false" aria-controls="panel-projects" tabindex="-1">Projects</button>
+    </div>
+  </header>
 
-    <section class="section reveal">
-      <p class="section-label">Get in touch</p>
-      <div class="contact-grid">
-        <a href="mailto:me@chrislaycock.dev" class="contact-item">
-          <div class="contact-item-left">
-            <span class="contact-tag">Email</span>
-            <span>me@chrislaycock.dev</span>
+  <main class="content" id="main-content" tabindex="-1">
+
+    <section id="panel-overview" class="tabpanel" role="tabpanel" aria-labelledby="tab-overview">
+      <div class="panel">
+        <div class="panel-header">Service details <span class="panel-header-meta">Console</span></div>
+        <div class="panel-body">
+          <div class="detail-grid">
+            <div class="detail-item">
+              <label for="endpoint-copy">Service endpoint</label>
+              <div class="copyable">
+                <a id="endpoint-copy" href="mailto:me@chrislaycock.dev">me@chrislaycock.dev</a>
+                <button type="button" class="copy-btn" data-copy="me@chrislaycock.dev" aria-label="Copy email address">
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4V1a1 1 0 011-1h10a1 1 0 011 1v10a1 1 0 01-1 1h-3v3a1 1 0 01-1 1H1a1 1 0 01-1-1V5a1 1 0 011-1h3zm2 0h5a1 1 0 011 1v5h2V2H6v2z"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="detail-item">
+              <label for="linkedin-copy">LinkedIn ARN</label>
+              <div class="copyable">
+                <a id="linkedin-copy" href="https://www.linkedin.com/in/christopher-laycock/" target="_blank" rel="noopener noreferrer">arn:linkedin:iam::christopher-laycock</a>
+                <button type="button" class="copy-btn" data-copy="https://www.linkedin.com/in/christopher-laycock/" aria-label="Copy LinkedIn profile URL">
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4V1a1 1 0 011-1h10a1 1 0 011 1v10a1 1 0 01-1 1h-3v3a1 1 0 01-1 1H1a1 1 0 01-1-1V5a1 1 0 011-1h3zm2 0h5a1 1 0 011 1v5h2V2H6v2z"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="detail-item">
+              <label>Region</label>
+              <span>us-south-1 (Tennessee)</span>
+            </div>
+            <div class="detail-item">
+              <label>Service status</label>
+              <span class="status-ok">● Operational</span>
+            </div>
+            <div class="detail-item span-2">
+              <label>Tags</label>
+              <div class="tag-row">
+                <span class="tag"><span class="tag-key">domain</span><span class="tag-val">cloud-security</span></span>
+                <span class="tag"><span class="tag-key">domain</span><span class="tag-val">infrastructure</span></span>
+                <span class="tag"><span class="tag-key">stack</span><span class="tag-val">terraform</span></span>
+                <span class="tag"><span class="tag-key">stack</span><span class="tag-val">govcloud</span></span>
+                <span class="tag"><span class="tag-key">focus</span><span class="tag-val">agentic-ai</span></span>
+              </div>
+            </div>
           </div>
-          <span class="contact-arrow">→</span>
-        </a>
-        <a href="https://www.linkedin.com/in/christopher-laycock/" target="_blank" rel="noopener noreferrer" class="contact-item">
-          <div class="contact-item-left">
-            <span class="contact-tag">LinkedIn</span>
-            <span>christopher-laycock</span>
-          </div>
-          <span class="contact-arrow">→</span>
-        </a>
+        </div>
       </div>
     </section>
 
-    <footer class="footer reveal">
-      <span>Chris Laycock</span>
-      <span>© 2026</span>
-    </footer>
+    <section id="panel-experience" class="tabpanel" role="tabpanel" aria-labelledby="tab-experience" hidden>
+      <div class="panel">
+        <div class="panel-header">Capabilities <span class="panel-header-meta">Expertise</span></div>
+        <div class="panel-body panel-body--flush">
+          <table class="features">
+            <caption class="visually-hidden">Professional capabilities and focus</caption>
+            <thead>
+              <tr>
+                <th scope="col">Area</th>
+                <th scope="col">Details</th>
+                <th scope="col">Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name">Agentic AI</td>
+                <td class="feature-desc">AWS-oriented agentic systems: tool use, orchestration, secure runtime boundaries, and human-in-the-loop controls for production paths.</td>
+                <td><span class="feature-focus feature-focus--primary">Primary</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Infrastructure automation</td>
+                <td class="feature-desc">Terraform, Terragrunt, CloudFormation, and AWS CDK: modular stacks, state discipline, CI/CD, and large-fleet migration from manual provisioning to repeatable pipelines.</td>
+                <td><span class="feature-focus feature-focus--primary">Primary</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Compliance platforms</td>
+                <td class="feature-desc">FedRAMP-aligned programs and boundary-protected regions in GovCloud and commercial partitions, including service catalog growth and faster enablement paths.</td>
+                <td><span class="feature-focus feature-focus--primary">Primary</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Landing zones &amp; governance</td>
+                <td class="feature-desc">Multi-account landing zones, Organizations, SCPs, least-privilege IAM, and repeatable account patterns; includes AWS, Azure, and OCI landing-zone delivery where needed.</td>
+                <td><span class="feature-focus feature-focus--core">Core</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Networking &amp; private access</td>
+                <td class="feature-desc">VPC design and segmentation, private endpoints and PrivateLink, hub-and-spoke with Transit Gateway.</td>
+                <td><span class="feature-focus feature-focus--core">Core</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Architecture review</td>
+                <td class="feature-desc">Engineering review boards: technical and risk assessment of design changes before production rollout.</td>
+                <td><span class="feature-focus feature-focus--practice">Practice</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-  </div>
+      <div class="panel">
+        <div class="panel-header">Role history <span class="panel-header-meta">Timeline</span></div>
+        <div class="panel-body panel-body--flush">
+          <table class="features features--timeline">
+            <caption class="visually-hidden">Role history and status</caption>
+            <thead>
+              <tr>
+                <th scope="col">Window</th>
+                <th scope="col">Role / scope</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name">Jan 2026 – Present</td>
+                <td class="feature-desc">Principal Cloud Engineer leading AWS platform strategy and building agentic AI systems with tool orchestration, secure runtime boundaries, and production guardrails.</td>
+                <td><span class="feature-status feature-status--active">● Active</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Mar 2024 – Dec 2025</td>
+                <td class="feature-desc">Senior Cloud Engineer: FedRAMP boundary platforms, private sandbox environments, and secure AWS service enablement.</td>
+                <td><span class="feature-status">✓ Complete</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Mar 2022 – Mar 2024</td>
+                <td class="feature-desc">Software Engineer: landing zones, boundary-protected accounts, and Terraform-based delivery across AWS, Azure, and OCI.</td>
+                <td><span class="feature-status">✓ Complete</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Jun 2021 – Mar 2022</td>
+                <td class="feature-desc">Software Engineer Associate focused on infrastructure automation, system hardening, and internal application development.</td>
+                <td><span class="feature-status">✓ Complete</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="panel-projects" class="tabpanel" role="tabpanel" aria-labelledby="tab-projects" hidden>
+      <div class="panel">
+        <div class="panel-header">Projects <span class="panel-header-meta">Portfolio</span></div>
+        <div class="panel-body panel-body--flush">
+          <table class="features">
+            <caption class="visually-hidden">Project list</caption>
+            <thead>
+              <tr>
+                <th scope="col">Project</th>
+                <th scope="col">Summary</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name">
+                  <a href="https://cloudtracker.dev" target="_blank" rel="noopener noreferrer">CloudTracker</a>
+                </td>
+                <td class="feature-desc">AWS does not provide a changelog for compliance program coverage, making it difficult to see when services are added, updated, or removed. CloudTracker provides that history in one place so regulated teams can evaluate new services, update documentation, and show when changes occurred.</td>
+                <td><span class="feature-status">● Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-bar">
+    <p>© 2026 Chris Laycock</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
