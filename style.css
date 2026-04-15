@@ -441,6 +441,15 @@ button:focus-visible {
   padding: 0;
 }
 
+.panel-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: #eef2f5;
+  border: 1px solid #dde4ea;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
 .tags-intro {
   font-size: 13px;
   color: var(--muted);
