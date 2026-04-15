@@ -47,30 +47,32 @@
   </nav>
 
   <header class="service-header">
-    <div class="sh-top">
-      <div>
-        <div class="sh-title-row">
-          <div class="sh-icon" aria-hidden="true">CL</div>
-          <h1 class="sh-name">
-            Chris Laycock
-            <button type="button" class="sh-fav" id="fav" aria-label="Add to favorites" aria-pressed="false">☆</button>
-          </h1>
+    <div class="page-shell service-header-inner">
+      <div class="sh-top">
+        <div>
+          <div class="sh-title-row">
+            <div class="sh-icon" aria-hidden="true">CL</div>
+            <h1 class="sh-name">
+              Chris Laycock
+              <button type="button" class="sh-fav" id="fav" aria-label="Add to favorites" aria-pressed="false">☆</button>
+            </h1>
+          </div>
+          <p class="sh-sub">I build secure cloud platforms for regulated environments, with a focus on GovCloud and AWS-based agentic AI systems.</p>
         </div>
-        <p class="sh-sub">I build secure cloud platforms for regulated environments, with a focus on GovCloud and AWS-based agentic AI systems.</p>
+        <div class="sh-actions">
+          <a href="https://www.linkedin.com/in/christopher-laycock/" class="btn-con" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:me@chrislaycock.dev" class="btn-con btn-primary">Say hello</a>
+        </div>
       </div>
-      <div class="sh-actions">
-        <a href="https://www.linkedin.com/in/christopher-laycock/" class="btn-con" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:me@chrislaycock.dev" class="btn-con btn-primary">Say hello</a>
+      <div class="tabs" role="tablist" aria-label="Profile sections">
+        <button type="button" class="tab active" role="tab" id="tab-overview" aria-selected="true" aria-controls="panel-overview" tabindex="0">Overview</button>
+        <button type="button" class="tab" role="tab" id="tab-experience" aria-selected="false" aria-controls="panel-experience" tabindex="-1">Experience</button>
+        <button type="button" class="tab" role="tab" id="tab-projects" aria-selected="false" aria-controls="panel-projects" tabindex="-1">Projects</button>
       </div>
-    </div>
-    <div class="tabs" role="tablist" aria-label="Profile sections">
-      <button type="button" class="tab active" role="tab" id="tab-overview" aria-selected="true" aria-controls="panel-overview" tabindex="0">Overview</button>
-      <button type="button" class="tab" role="tab" id="tab-experience" aria-selected="false" aria-controls="panel-experience" tabindex="-1">Experience</button>
-      <button type="button" class="tab" role="tab" id="tab-projects" aria-selected="false" aria-controls="panel-projects" tabindex="-1">Projects</button>
     </div>
   </header>
 
-  <main class="content" id="main-content" tabindex="-1">
+  <main class="content page-shell" id="main-content" tabindex="-1">
 
     <section id="panel-overview" class="tabpanel" role="tabpanel" aria-labelledby="tab-overview">
       <div class="panel">
